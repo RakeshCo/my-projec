@@ -1,0 +1,243 @@
+.container{
+     display: flex;
+     justify-content: space-between;
+}
+.content, a{
+     text-decoration: none;
+     color: black;
+   margin-top: 40px;
+   margin-right: 30px;
+} 
+
+
+/* Body Settings */
+
+   
+   /* Background Image */
+   .background {
+     background-image: url('https://drvivekan.in/images/bann.jpg');
+    
+     background-size: cover;
+     background-position: center;
+     height: 100%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: flex-start;
+   }
+   
+   /* Form Container */
+   .form_container {
+    
+     padding: 20px;
+     margin: 20px;
+     border-radius: 10px;
+     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+     width: 300px;
+   }
+   .form_container,h2{
+     text-transform: uppercase;
+     color: orange;
+   }
+   .summit,button{
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+     margin-left: 45px;
+   }
+   
+   /* Form Styling */
+   form {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+   }
+   
+   form input, form textarea {
+     margin-bottom: 10px;
+     padding: 10px;
+     width: 100%;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+   }
+  
+
+   /* Grid Container */
+   .grid-container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr); /* 3 columns */
+     gap: 40px;
+     /* padding: 20px; */
+     width: 80%;
+     margin-left: 100px;
+     max-width: 1200px; /* Max width of the grid */
+   }
+   
+   /* Grid Item */
+   .grid-item {
+     text-align: center;
+ 
+     /* padding: 10px; */
+     border-radius: 10px;
+    
+   }
+   h4{
+     text-transform: uppercase;
+     font-size: 18px;
+   }
+   
+   
+   .grid-item img {
+     width: 100%;
+     height: auto;
+     border-radius: 8px;
+   }
+   
+   .grid-item p {
+     margin-top: 10px;
+     font-size: 16px;
+     color: #333;
+     font-weight: 500;
+   }
+  
+ h2 {
+     text-align: center;
+ }
+ .footer{
+     display: flex;
+     justify-content: space-between;
+     background-color: black;
+    
+ }
+ .heading ,h3{
+     font-size: 20px;
+     color: white;
+     margin-left: 25px;
+ }
+ .open-form-btn {
+     height: 50px;
+     width: 200px;
+     margin-top: 10px;
+   margin-right: 70px;
+ 
+    
+    
+ }
+ 
+ 
+ 
+ /* Form container (hidden by default) */
+ .form-container {
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: white;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+     width: 300px;
+ }
+ 
+ form label {
+     display: block;
+     margin-bottom: 8px;
+ }
+ 
+ form input,
+ form textarea {
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 15px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+ }
+ 
+ /* form button {
+     width: 100%;
+     padding: 10px;
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     cursor: pointer;
+ }
+ 
+ form button:hover {
+     background-color: #45a049;
+ }
+  */
+ .close-btn {
+     padding: 10px 20px;
+     background-color: red;
+     color: white;
+     border: none;
+     cursor: pointer;
+     margin-top: 10px;
+ }
+ 
+ .close-btn:hover {
+     background-color: #d32f2f;
+ }
+ 
+     
+ 
+   
+   .text-writer {
+     display: flex;
+    justify-content: space-between;
+    
+     gap: 20px; /* Adds space between the text and image */
+     padding: 20px;
+ }
+
+ .text,p {
+     font-size: 18px;
+     color: #333;
+     gap:7px;
+    
+    
+ }
+ .contact-container{
+     display: flex;
+     justify-content: space-between;
+ }
+  .contact-info{ 
+     margin-top: 30px;
+     display: flex;
+     gap:100px;
+     color: black;
+   
+ } 
+i{
+     color: blue;
+}
+.copy-right{
+     display: flex;
+     justify-content: space-between;
+     background-color: black;
+     color: white;
+}
+ 
+
+/* media query */
+@media (max-width: 468px) {
+     .container {
+         flex-direction: column; /* Stack the logo and text on smaller screens */
+         text-align: center; /* Center the text below the logo */
+     }
+ 
+     .logo {
+         width: 40px; /* Smaller logo for mobile */
+     }
+ 
+     .content {
+         font-size: 14px; /* Adjust text size for smaller screens */
+     }
+}
+
+@media(max-width:468){
+     .background{
+          flex-direction: column;
+     }
+
+}
